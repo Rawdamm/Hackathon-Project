@@ -14,14 +14,14 @@ button {
   cursor: pointer;
 }
 
-/* ---- Glowing gradient border around search bar ---- */
+
 @keyframes glow-move {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* ---- Animated orange gradient border that travels around the search box ---- */
+
 @property --glow-angle {
   syntax: '<angle>';
   initial-value: 0deg;
@@ -31,7 +31,7 @@ button {
 .glow-border {
   position: absolute;
   inset: -2px;
-  border-radius: 1.6rem; /* matches rounded-3xl on the search box */
+  border-radius: 1.6rem; 
   padding: 2px;
   background: conic-gradient(
     from var(--glow-angle, 0deg),
@@ -59,7 +59,7 @@ button {
   z-index: 1;
 }
 
-/* outer blurred halo, same animated angle */
+
 .glow-border::after {
   content: "";
   position: absolute;
@@ -84,7 +84,7 @@ button {
   to { --glow-angle: 360deg; }
 }
 
-/* ---- "Searchify" animated shimmer text gradient ---- */
+
 @keyframes text-shimmer {
   0%   { background-position: 0% 50%; }
   50%  { background-position: 100% 50%; }
@@ -101,7 +101,7 @@ button {
   text-shadow: 0 0 18px rgba(249, 115, 22, 0.18);
 }
 
-/* ---- ReSearchify logo mark ---- */
+
 .researchify-logo {
   filter: drop-shadow(0 0 6px rgba(249, 115, 22, 0.55))
           drop-shadow(0 0 14px rgba(234, 88, 12, 0.25));
@@ -125,7 +125,7 @@ button {
 }
 
 
-/* ---- Sources trigger button — animated gradient ring ---- */
+
 .sources-trigger-wrap {
   display: inline-block;
   position: relative;
@@ -145,7 +145,7 @@ button {
   box-shadow: 0 0 14px rgba(249, 115, 22, 0.2), 0 0 28px rgba(148, 163, 184, 0.08);
 }
 
-/* ---- Platforms fading marquee (GitHub style) ---- */
+
 @keyframes marquee-scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -181,29 +181,29 @@ button {
   animation: logo-fade 3s ease-in-out infinite;
 }
 
-/* ---- Hero background exit animation ---- */
+
 .hero-bg-exit {
   transition: transform 1s ease, opacity 1s ease;
 }
 
-/* ---- Warm sunset orange-on-black background ---- */
+
 .hero-bg-radial {
   background-color: #080503;
   background-image:
-    /* dark vignette wrapping the edges */
+   
     radial-gradient(
       ellipse 130% 100% at 50% 50%,
       rgba(0, 0, 0, 0) 42%,
       rgba(0, 0, 0, 0.78) 80%,
       rgba(0, 0, 0, 0.98) 100%
     ),
-    /* deep amber outer glow */
+   
     radial-gradient(
       ellipse 95% 65% at 50% 65%,
       rgba(124, 45, 18, 0.55) 0%,
       rgba(124, 45, 18, 0) 70%
     ),
-    /* main vivid orange glow */
+   
     radial-gradient(
       ellipse 70% 50% at 50% 60%,
       rgba(249, 115, 22, 0.55) 0%,
@@ -211,7 +211,7 @@ button {
       rgba(124, 45, 18, 0.18) 60%,
       rgba(0, 0, 0, 0) 85%
     ),
-    /* bright warm core highlight */
+    
     radial-gradient(
       ellipse 45% 32% at 50% 55%,
       rgba(253, 186, 116, 0.38) 0%,
