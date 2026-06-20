@@ -145,7 +145,6 @@ button {
   box-shadow: 0 0 14px rgba(249, 115, 22, 0.2), 0 0 28px rgba(148, 163, 184, 0.08);
 }
 
-
 @keyframes marquee-scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
